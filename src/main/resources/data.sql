@@ -6,6 +6,7 @@ VALUES
 insert into user_roles (username,role)
 VALUES
   ('admin','ROLE_ADMIN'),
+  ('admin','ROLE_ACTUATOR'),
   ('user','ROLE_USER');
 
 insert into products
