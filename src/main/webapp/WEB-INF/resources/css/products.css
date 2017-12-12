@@ -1,0 +1,68 @@
+#productsWrap {
+    position: relative;
+    width: 930px;
+    margin: 20px auto 0px auto;
+    box-sizing: border-box;
+}
+.singleProduct {
+    font-family: Tahoma, monospace;
+    color: lightgrey;
+    float: left;
+    width: 290px;
+    box-shadow: 0 0 5px 2px rgba(0,0,0,0.4);
+    box-sizing: border-box;
+    border: 2px solid #2bc239;
+    margin: 10px;
+    border-radius: 2px;
+    padding: 10px;
+    background-color: #4f6086;
+}
+.singleProduct img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.addButton {
+    color: ghostwhite;
+    border-radius: 2px;
+    background: linear-gradient(to top, #2bc239, #299a33);
+    height: 30px;
+    width: 90px;
+    border: 1px solid #299a33;
+    box-shadow: inset 0 0 0 1px #2bc239,
+                0 0 3px 1px rgba(0,0,0,0.6);
+    display: block;
+    margin: 5px 5px 5px auto;
+    text-shadow: 1px 1px 2px 3px rgba(0,0,0,0.4);
+}
+.addButton:hover {
+    background: linear-gradient(to top, #299a33, #2bc239);
+    cursor: hand;
+
+}
+#brands {
+    position: absolute;
+    width: 150px;
+    height: 400px;
+    left: -150px;
+    top: 10px
+}
+#brands ul li {
+    background-color: #4f6086;
+    border: 2px solid #2bc239;
+    border-radius: 2px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 3px 1px rgba(0,0,0,0.4);
+}
+#brands ul li a:link,#brands ul li a:visited, #brands ul li a:active  {
+    display: inline-block;
+    padding: 5px;
+    text-decoration: none;
+    font-family: Tahoma, monospace;
+    color: lightgrey;
+    font-size: 18px;
+}
+#brands ul li a:hover {
+    text-decoration: underline;
+}
+

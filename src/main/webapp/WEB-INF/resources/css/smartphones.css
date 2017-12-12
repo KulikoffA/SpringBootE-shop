@@ -1,0 +1,8 @@
+
+.singleProduct {
+    height: 530px;
+}
+.singleProduct img {
+    max-height: 370px;
+    max-width: 200px;
+}

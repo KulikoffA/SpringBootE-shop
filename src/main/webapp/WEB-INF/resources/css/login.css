@@ -1,0 +1,84 @@
+.form{
+    margin: 10px auto 10px auto;
+    font-family: Tahoma, monospace;
+    width: 300px;
+    font-size: 18px;
+    background: #495C70;
+    padding: 30px 30px 15px 30px;
+    border: 3px solid #53687E;
+    height: 110px;
+    color: #fff;
+    border-radius: 3px;
+}
+
+.form input[type=text], form input[type=email], .form input[type=password], .form input[type=textarea], .form select {
+    font-family: Tahoma, monospace;
+    font-size: 18px;
+    color: #fff;
+}
+.form label {
+    display: inline-block;
+    margin-bottom: 12px;
+}
+.form input[type=text], form input[type=email], .form input[type=password], .form input[type=textarea], .form select {
+    background: transparent;
+    border: none;
+    border-bottom: 1px dashed #83A4C5;
+    width: 175px;
+    outline: none;
+    padding: 0px 0px 0px 0px;
+    float: right;
+}
+.form input[type=text]:focus, form input[type=email]:focus, .form input[type=password]:focus, .form input[type=textarea]:focus, .form select:focus {
+    border-bottom: 1px dashed #D9FFA9;
+}
+.addButton {
+    margin-top: 10px;
+}
+#status {
+    margin: 10px auto 10px auto;
+    font-family: Tahoma, monospace;
+    width: 330px;
+    font-size: 16px;
+    background: #495C70;
+    padding: 15px;
+    border: 3px solid #53687E;
+    height: 20px;
+    color: #fff;
+    border-radius: 3px;
+}
+form> a:link,form> a:visited,form> a:active {
+    padding: 20px;
+    font-size: 22px;
+    font-family: Tahoma,monospace;
+    display: inline-block;
+    color: lightgrey;
+    text-shadow: 3px 3px 5px 3px rgba(0,0,0,1);
+}
+form> a:hover {
+    text-decoration: underline;
+    color: white;
+}
+select option {
+    margin: 10px;
+    background-color: #4f6086;
+}
+
+.form input[type=file] {
+    float: right;
+    margin-right: -15px;
+}
+#btnAdd, .form input[type=file]::-webkit-file-upload-button {
+    color: ghostwhite;
+    border-radius: 2px;
+    background: linear-gradient(to top, #2bc239, #299a33);
+    height: 30px;
+    width: 130px;
+    border: 1px solid #299a33;
+    box-shadow: inset 0 0 0 1px #2bc239,
+    0 0 3px 1px rgba(0,0,0,0.6);
+}
+#btnAdd, .form input[type=file]::-webkit-file-upload-button:hover {
+    background: linear-gradient(to top, #299a33, #2bc239);
+    cursor: hand;
+}
