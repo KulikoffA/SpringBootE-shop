@@ -37,9 +37,13 @@ public class Management {
         MultipartFile productImage = newProduct.getProductImage();
         if (productImage != null && !productImage.isEmpty()) {
             try {
-                productImage.transferTo(new File(
-                        "C:\\Users\\Kulikoff_A\\Desktop\\demoui\\src\\main\\webapp\\WEB-INF\\resources\\img\\" + newProduct.getCategory() +
-                                "\\" + newProduct.getName() + ".png"));
+                String rootDir = new File(".")
+                        .getAbsoluteFile()
+                        .getParentFile()
+                        .getAbsolutePath()
+                        .replace("/","\\");
+                productImage.transferTo(new File(rootDir + "\\demoui\\src\\main\\webapp\\WEB-INF\\resources\\img\\" +
+                        newProduct.getCategory() + "\\" + newProduct.getName() + ".png"));
             } catch (Exception e) {
                 throw new RuntimeException("Product Image saving failed", e);
             }
