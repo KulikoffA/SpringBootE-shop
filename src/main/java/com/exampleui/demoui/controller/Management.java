@@ -40,10 +40,9 @@ public class Management {
                 String rootDir = new File(".")
                         .getAbsoluteFile()
                         .getParentFile()
-                        .getAbsolutePath()
-                        .replace("/","\\");
-                productImage.transferTo(new File(rootDir + "\\src\\main\\webapp\\WEB-INF\\resources\\img\\" +
-                        newProduct.getCategory() + "\\" + newProduct.getName() + ".png"));
+                        .getAbsolutePath();
+                productImage.transferTo(new File(rootDir + "/src/main/webapp/WEB-INF/resources/img/" +
+                        newProduct.getCategory() + "/" + newProduct.getName() + ".png"));
             } catch (Exception e) {
                 throw new RuntimeException("Product Image saving failed", e);
             }
