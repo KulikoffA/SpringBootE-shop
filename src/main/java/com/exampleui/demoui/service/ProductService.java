@@ -3,10 +3,8 @@ package com.exampleui.demoui.service;
 import com.exampleui.demoui.domain.CartCheckout;
 import com.exampleui.demoui.domain.CartItems;
 import com.exampleui.demoui.domain.Product;
-import com.exampleui.demoui.domain.repository.CartCheckoutFace;
-import com.exampleui.demoui.domain.repository.CartFace;
-import com.exampleui.demoui.domain.repository.CartItemsFace;
-import com.exampleui.demoui.domain.repository.ProductFace;
+import com.exampleui.demoui.domain.entity.Products;
+import com.exampleui.demoui.domain.repository.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -36,9 +34,9 @@ public class ProductService implements ProductServiceFace {
     }
 
     @Override
-    public SortedSet<String> getBrands(List<Product> products) {
+    public SortedSet<String> getBrands(List<Products> products) {
         SortedSet<String> brands = new TreeSet<>();
-        for (Product product : products) {
+        for (Products product : products) {
             String brand = product.getBrand();
             brands.add(brand);
         }

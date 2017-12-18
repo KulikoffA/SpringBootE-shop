@@ -3,13 +3,14 @@ package com.exampleui.demoui.service;
 import com.exampleui.demoui.domain.CartCheckout;
 import com.exampleui.demoui.domain.CartItems;
 import com.exampleui.demoui.domain.Product;
+import com.exampleui.demoui.domain.entity.Products;
 
 import java.util.List;
 import java.util.SortedSet;
 
 public interface ProductServiceFace {
     List<Product> getAllProducts();
-    SortedSet<String> getBrands(List<Product> products);
+    SortedSet<String> getBrands(List<Products> products);
     List<Product> getProductsByBrand(String brand);
     List<Product> getProductsByCategory(String category);
     List<Product> getProductsByCategoryBrand(String category, String brand);
